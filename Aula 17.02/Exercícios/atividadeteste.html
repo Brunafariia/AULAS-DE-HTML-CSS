@@ -1,0 +1,137 @@
+<!-- Atividade Prática de HTML: Criando uma Página de Contato
+Nesta atividade prática de HTML, iremos criar uma página de contato com títulos,
+parágrafos, lista, tabela e formulário.
+
+Objetivo: Criar uma página de contato com uma lista de informações da empresa, 
+formulário de contato e uma tabela com informações de contato. Siga o modelo em anexo. -->
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+	<title>Página de Contato</title>
+</head>
+<body>
+
+	<header>
+        <fieldset>
+            <legend><strong>Informações da Empresa</strong></legend>
+
+            <nav style="width: 500px; border: 2px solid red;">
+            <ul>
+                <li><a href="#">Nome da Empresa</a></li>
+                <li><a href="#">Missão</a></li>
+                <li><a href="#">Visão</a></li>
+                <li><a href="#">Email</a></li>
+                <li><a href="#">Servições de administração</a></li>
+                <li><a href="#">Sobre os terceirizados</a></li>
+                <li><a href="#">Contato</a></li>
+                <p>Entre em contato conosco através do formulário abaixo ou pelos meios de contato listados na tabela.</p>
+            <a href="https://web.whatsapp.com/send?phone=558888164029&text=oieeeee" target="_blank">Clica aqui para mandar uma mensagem via WhatsApp</a>
+                
+            </ul>>
+		</nav>
+    </fieldset>
+	</header>
+
+	<main>
+        <fieldset>
+		<section>
+			<legend><h2><b>Contato pessoal:</b></h2></legend>
+
+        <nav style="width: 800px; border: 2px solid rgb(43, 0, 255);">
+
+
+        <label for="cNome">Nome:</label> 
+        <input required type="text" id="cNome" name="nome" minlength="1" maxlength="70" size="50" >
+        <br>
+
+        <label for="cEmail"> E-mail:</label>
+        <input type="email" name="email" id="cEmail" value="digiteseuemail@gmail.com" > <br>
+
+        <label for="cTelefone">Telefone:</label> 
+        <input type="tel" id="cTelefone" name="telefone" > <br>
+
+        <label for="cDataNas">Data e Hora de nascimento:</label>
+        <input type="datetime-local" id="cDataNas" name="data de nascimento" > <br>
+
+        <label>Sexo:</label>
+        <label for="cIndefinido"></label>
+        <input type="radio" id="cIndefinido" name="sexo" name=" sexo Indefinido"> Indefinido
+
+        <label for="cMasc"></label>
+        <input type="radio" id="cMasc" name="sexo" name=" sexo Masculino"> Masculino
+
+        <label for="cFem"></label>
+        <input type="radio" id="cFem" name="sexo" name=" sexo Feminino"> Feminino
+        </fieldset>
+		</section>
+        <br>
+
+        Deixe aqui seu pedido para orçamento: <br>
+        <textarea cols="60" rows="4" placeholder="Digite seu texto aqui" >
+
+        </textarea> <br>
+                    Escolaridade:
+            <select>
+            <option disabled selected >Selecione uma opção</option>
+            <option>Ensino médio incompleto</option>
+            <option> Ensino médio completo</option>
+            <option> Ensino superior incompleto</option>
+            <option> Ensino superior completo</option>
+        </select>
+        <input type="subimt" value="Enviar"> <!-- submeter -->
+        <button type="submit">Enviar</button>
+        <button type="submit">Não faz nada</button>
+        <button type="submit">Reiniciar</button>
+
+
+		<section>
+			<h2><strong>Informações de Contato</strong></h2>
+            <table border="1">
+                <tr>
+                    <th>Nome do responsável</th>
+                    <th>Telefone</th>
+                    <th>Endereço</th>
+                    <th>Email de contato</th>
+                    
+                </tr>
+                <tr>
+                    <td>  Bruna Faria  </td>
+                    <td>   (21) 9999-9999  </td>
+                    <td>   São Paulo/SP - Rua dos vinhedos 79  </td>
+                    <td>   emaildecontato@gmail.com    </td>
+                </tr>
+                <tr>          
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Minha Empresa. Todos os direitos reservados.</p>        
+	</footer>
+    <p align="center">Todos os direitos reservados Bruna Faria</p>
+
+    <section>
+        <h2><strong>Informações de Contato</strong></h2>
+        <table border="1">
+            <tr>
+                <th>Nome do responsável</th>
+                <th>Telefone</th>
+                <th>Endereço</th>
+                <th>Email de contato</th>
+                
+            </tr>
+            <tr>
+                <td>  Bruna Faria  </td>
+                <td>   (21) 9999-9999  </td>
+                <td>   São Paulo/SP - Rua dos vinhedos 79  </td>
+                <td>   emaildecontato@gmail.com    </td>
+            </tr>
+            <tr>          
+    </section>
+</main>
+
+</body>
+</html>

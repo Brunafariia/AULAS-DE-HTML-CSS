@@ -1,0 +1,6 @@
+HTML -> HyperText Markup Language (Linguagem de Marcação de Hyper Texto)
+HyperText -> Texto Inteligente
+Markut -> Marcação (Tags)
+Language -> Linguagem (Sintaxe/Regras)
+
+<tag> Texto qualquer que vai aparecer na página</tag>

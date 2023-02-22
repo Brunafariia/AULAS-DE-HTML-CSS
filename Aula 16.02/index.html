@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula de HTML e CSS</title>
+</head>
+<body>
+
+    <h3>Cadastro de Perfil</h3>
+    <form>
+        <!-- esse "cNome" é para ao clicar na palavra nome 
+            ele automaticamente clica no espaço para digitar -->
+            <!-- OBS: todos tem que colocar "name=...." no input para interligar todos no final -->
+        
+
+        
+        <fieldset>
+            <legend><b> Dados Pessoais:</b></legend>
+        <label for="cNome">Nome:</label> 
+        <input required type="text" id="cNome" name="nome" minlength="1" maxlength="70" size="50" >
+        <br>
+
+        <label for="cSenha">Senha:</label> 
+        <input type="password" id="cSenha" name="senha" > <br>
+
+        <label for="cEmail"> E-mail:</label>
+        <input type="email" name="email" id="cEmail" value="digiteseuemail@gmail.com" > <br>
+
+        <label for="cTelefone">Telefone:</label> 
+        <input type="tel" id="cTelefone" name="telefone" > <br>
+
+        <label for="cNumber"></label> Idade:
+        <input type="number" id="cNumber" name="number" > <br>
+
+        <label for="cUrl"></label> URL do Instagram:
+        <input type="url" id="cUrl" name="url do Instagram" > <br>
+        
+        <label for="cDate">Data de Nascimento:</label>
+        <input type="date" id="cDate" min="2000-01-01" max="2023-02-16" name="data de nascimento" > <br>
+
+        <label for="cHora">Hora de Nascimento:</label>
+        <input type="time" name="hora de nascimento" > <br>
+
+        <label for="cSalario">Pretenção Salárial:</label>
+        <input type="number" min="0" max="6000" name="pretenção salarial" > <br>
+
+        <label for="cDataNas">Data e Hora de nascimento:</label>
+        <input type="datetime-local" id="cDataNas" name="data de nascimento" > <br>
+
+        <label for="cPerfil">Foto do Perfil:</label>
+        <input type="file" id="cPerfil" multiple accept=".jpeg,.png" name="avatar" > <br>
+
+        <label>Sexo:</label>
+        <label for="cIndefinido">Indefinido</label>
+        <input type="radio" id="cIndefinido" name="sexo" name=" sexo Indefinido"> Indefinido
+
+        <label for="cMasc">Masculino</label>
+        <input type="radio" id="cMasc" name="sexo" name=" sexo Masculino"> Masculino
+
+        <label for="cFem">Feminino</label>
+        <input type="radio" id="cFem" name="sexo" name=" sexo Feminino"> Feminino
+        </fieldset>
+        <br>
+
+        <!-- em caso de mais de uma opção colocar só no primeiro -->
+
+        <fieldset>
+        <legend><b> Dados Adicionais:</b></legend>
+        <label for="cInteresses">Interesses:</label>
+        Humanas <input name="interesses" type="checkbox" id="cInteresses" >
+        Exatas <input name="interesses" type="checkbox">
+        Linguagens <input name="interesses" type="checkbox">
+        Ciências <input name="interesses" type="checkbox">
+
+        <br>
+
+        <label for="cColor">Sua Cor Preferida:</label>
+        <input type="color" id="cColor" name="cor" ><br>
+
+        <br> 
+
+        Nível de Inglês:
+        1 <input type="range"  min="0" max="5" list="markers" name="inglês" value="0" >5 <br>
+        <datalist id="markers" >
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option value="5">
+        </datalist>
+        <br>
+        Escondido: (veja no inspecionar)
+        <input type="hidden" value="52625965625596"> <br>
+
+        Conte um pouco sobre você: <br>
+        <textarea cols="60" rows="4" placeholder="Digite seu texto aqui" >
+
+            Texto Inicial
+        </textarea> <br>
+                    Escolaridade:
+            <select>
+            <option disabled selected >Selecione uma opção</option>
+            <option>Ensino médio incompleto</option>
+            <option> Ensino médio completo</option>
+            <option> Ensino superior incompleto</option>
+            <option> Ensino superior completo</option>
+        </select>
+        <input type="subimt" value="Enviar"> <!-- submeter -->
+        <button type="submit">Enviar</button>
+        <button type="submit">Não faz nada</button>
+        <button type="submit">Reiniciar</button>
+    </fieldset>
+    </form>
+    
+</body>
+</html>
+
+<!-- (Crtl + ') para comando automático para ir para o terminal -->
