@@ -1,0 +1,33 @@
+/* *-> seletor universal */
+
+*{
+    /* altera a fonte padrão do documento */
+    font-family: poppins, arial, sans-serif;
+}
+
+h1, h2 {
+    /* altera o tamanho da fonte */
+    font-size: 35px;
+    font-weight: 700;
+}
+
+h1 {
+    /* sombreamento de texto */
+    text-shadow: 2px 2px yellow;
+    /* x, y, espessura, cor */
+}
+
+h2 {
+    /* aplica itálica na fonte */
+    font-style: italic;
+     color: #f10c49; /*rgb(rgb (50, 70, 120)) ou red */
+}
+
+p {
+    /* alinhamento de texto */
+    text-align: justify; /*justify, left, center, right,*/
+    /* tranformação de texto */
+    text-transform: uppercase ; /* capitalize, uppercase, lowercase */
+    /* altura da linha */
+    line-height: 23px;
+}

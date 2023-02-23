@@ -1,0 +1,40 @@
+/* 
+    SINTAXE
+    seletor { propriedade: valor; }
+*/
+
+/* SELETOR */
+/*  Quando é Class: se usa ponto antes "." 
+    Quando é id: se usa quando é algo individual
+    ---
+    tag -> Nome da TAG de um documento que queira aplicar um estilo
+    id -> Identificar de forma unica um elemento de um documento
+    class -> Indentificar um elemento de um conjunto em um documento
+*/
+
+#p-1 {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#p-2 {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    color: rgb(255, 0, 195);
+}
+
+.artigo {
+    width: 300px; /*largura*/
+}
+
+.artigo img {
+    width: 100%;
+}
+
+.artigo small {
+    font-size: 15px;
+    font-family: Calibri, sans-serif;
+}
